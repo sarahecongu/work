@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 50px;
+    padding: 10px 0 5px 0 10px;
+    font-size: 25px;
+}
+::placeholder{
+    font-size: 15px;
+    color: blue;
+}
+input{
+    padding: 10px;
+}
+button{
+    padding: 10px
+}

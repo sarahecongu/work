@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>form validation</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+   <div class="container">
+<form action="/">
+    <!--name-->
+    <div class="input-group">
+        <label for="first name">First Name:</label>
+        <input type="text" placeholder="Please enter your name" id="contact-name" onkeyup="validateName()">
+        <span id="name-error"></span>
+    
+    </div>
+   
+<!--email-->
+    <div class="input-group">
+        <label for="email">Email Address:</label>
+        <input type="email" placeholder="Enter Email"id="contact-email" onkeyup="validateEmail()">
+        <span id="email-error"></span>
+    </div>
+    <!--password-->
+    <div class="input-group">
+        <label for="password">Password: </label>
+        <input type="password" placeholder="sarahatim" id="contact-password" onkeyup="validatePassword()">
+        <span id="password-error"></span>
+    </div>
+    <button onclick="return validateForm()">submit</button>
+    <span id="submit-error"></span>
+
+
+
+</form>
+   </div> 
+   
+   <script src="forms.js"></script>
+</body>
+</html>
